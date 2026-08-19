@@ -1,46 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="id">
 <head>
   <meta charset="UTF-8">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TikSave - TikTok Downloader</title>
+
+  <title>Download Video TikTok Tanpa Watermark - TikSave</title>
+
+  <meta name="description" content="Download video TikTok tanpa watermark dengan cepat dan mudah menggunakan TikSave. Cukup tempel link video TikTok dan download video favorit Anda.">
+
+  <meta name="keywords" content="download video tiktok, download video tiktok tanpa watermark, tiktok downloader, tiktok video downloader, download tiktok tanpa watermark, simpan video tiktok">
+
+  <meta name="robots" content="index, follow">
+
+  <meta name="author" content="TikSave">
+
+  <link rel="canonical" href="https://videosave-source.github.io/tiktok-saver/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Download Video TikTok Tanpa Watermark - TikSave">
+  <meta property="og:description" content="Download video TikTok tanpa watermark dengan cepat dan mudah. Tempel link TikTok dan download video favorit Anda.">
+  <meta property="og:url" content="https://videosave-source.github.io/tiktok-saver/">
+  <meta property="og:site_name" content="TikSave">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Download Video TikTok Tanpa Watermark - TikSave">
+  <meta name="twitter:description" content="Download video TikTok tanpa watermark dengan cepat dan mudah menggunakan TikSave.">
+
   <link rel="stylesheet" href="style.css">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "TikSave",
+    "url": "https://videosave-source.github.io/tiktok-saver/",
+    "description": "Tool untuk download video TikTok tanpa watermark secara mudah dan cepat.",
+    "applicationCategory": "UtilitiesApplication",
+    "operatingSystem": "Web Browser",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
+  }
+  </script>
 </head>
 
 <body>
 
   <header class="header">
-    <div class="logo">Tik<span>Save</span></div>
-    <div class="badge">FREE</div>
+    <div class="logo">
+      Tik<span>Save</span>
+    </div>
+
+    <div class="badge">
+      FREE
+    </div>
   </header>
+
 
   <main>
 
+    <!-- HERO -->
     <section class="hero">
 
-      <div class="hero-icon">↓</div>
+      <div class="hero-icon">
+        ⬇️
+      </div>
 
       <h1>
-        TikTok Video<br>
-        <span>Downloader</span>
+        Download Video TikTok
+        <br>
+        <span>Tanpa Watermark</span>
       </h1>
 
       <p>
-        Download TikTok videos quickly and easily.
+        Download video TikTok dengan cepat dan mudah.
+        Cukup tempel link video TikTok di bawah untuk mulai mengunduh.
       </p>
 
+
+      <!-- DOWNLOAD BOX -->
       <div class="download-box">
 
         <div class="input-wrapper">
 
-          <span class="link-icon">🔗</span>
+          <span class="link-icon">
+            🔗
+          </span>
 
           <input
             type="url"
             id="tiktokUrl"
-            placeholder="Paste TikTok video URL..."
+            placeholder="Tempel link video TikTok..."
             autocomplete="off"
+            aria-label="Link video TikTok"
           >
 
           <button
@@ -52,25 +110,28 @@
 
         </div>
 
+
         <!-- DOWNLOAD UTAMA -->
         <button
           id="downloadBtn"
           type="button"
         >
-          ↓ Download Video
+          ⬇ Download Video
         </button>
 
-        <!-- 2 TOMBOL ALTERNATIF -->
-        <div style="
-          margin-top:15px;
-          display:flex;
-          flex-direction:column;
-          gap:12px;
-        ">
 
-          <!-- ALTERNATIF 1 -->
+        <!-- TOMBOL ALTERNATIF -->
+        <div
+          style="
+            margin-top:15px;
+            display:flex;
+            flex-direction:column;
+            gap:12px;
+          "
+        >
+
           <a
-            href="https://www.effectivecpmnetwork.com/n1i53fjbft?key=504f09b72041b19282e960db58ffc81d"
+            href="https://www.effectivecpmnetwork.com/n1i53fjbf?key=504f09b72041b19282e960db58ffc81d"
             target="_blank"
             rel="noopener noreferrer"
             style="
@@ -91,10 +152,9 @@
             ⚡ Download Alternatif 1
           </a>
 
-          <!-- ALTERNATIF 2 -->
-          <!-- GANTI LINK DI BAWAH INI KALAU SUDAH PUNYA LINK -->
+
           <a
-            href="https://www.effectivecpmnetwork.com/n1i53fjbft?key=504f09b72041b19282e960db58ffc81d"
+            href="https://www.effectivecpmnetwork.com/n1i53fjbf?key=504f09b72041b19282e960db58ffc81d"
             target="_blank"
             rel="noopener noreferrer"
             style="
@@ -119,12 +179,17 @@
 
       </div>
 
+
       <div id="message"></div>
 
     </section>
 
 
-    <section id="resultsSection" class="hidden">
+    <!-- HASIL DOWNLOAD -->
+    <section
+      id="resultsSection"
+      class="hidden"
+    >
 
       <div class="result-card">
 
@@ -134,12 +199,15 @@
           playsinline
         ></video>
 
+
         <div class="video-info">
 
-          <h2>Video Ready</h2>
+          <h2>
+            Video Siap Diunduh
+          </h2>
 
           <p>
-            Your video is ready to download.
+            Video TikTok Anda sudah siap untuk disimpan.
           </p>
 
           <a
@@ -147,7 +215,7 @@
             href="#"
             target="_blank"
           >
-            ↓ Save Video
+            ⬇ Save Video
           </a>
 
         </div>
@@ -157,58 +225,105 @@
     </section>
 
 
+    <!-- FITUR -->
     <section class="features">
 
       <div class="feature">
 
-        <div>⚡</div>
+        <div>
+          ⚡
+        </div>
 
-        <h3>Fast</h3>
+        <h3>
+          Cepat
+        </h3>
 
-        <p>Simple and quick.</p>
-
-      </div>
-
-
-      <div class="feature">
-
-        <div>📱</div>
-
-        <h3>Mobile</h3>
-
-        <p>Works on mobile devices.</p>
+        <p>
+          Download video TikTok dengan proses yang cepat dan sederhana.
+        </p>
 
       </div>
 
 
       <div class="feature">
 
-        <div>🔒</div>
+        <div>
+          📱
+        </div>
 
-        <h3>Simple</h3>
+        <h3>
+          Mudah Digunakan
+        </h3>
 
-        <p>No account required.</p>
+        <p>
+          Bisa digunakan melalui HP, tablet, maupun komputer.
+        </p>
+
+      </div>
+
+
+      <div class="feature">
+
+        <div>
+          🔒
+        </div>
+
+        <h3>
+          Aman
+        </h3>
+
+        <p>
+          Tidak perlu membuat akun untuk menggunakan TikSave.
+        </p>
+
+      </div>
+
+
+      <div class="feature">
+
+        <div>
+          🆓
+        </div>
+
+        <h3>
+          Gratis
+        </h3>
+
+        <p>
+          Gunakan TikSave secara gratis untuk mengunduh video TikTok.
+        </p>
 
       </div>
 
     </section>
 
 
+    <!-- CARA MENGGUNAKAN -->
     <section class="how-section">
 
-      <h2>How to use</h2>
+      <h2>
+        Cara Download Video TikTok
+      </h2>
 
       <div class="steps">
 
+
         <div class="step">
 
-          <span>1</span>
+          <span>
+            1
+          </span>
 
           <div>
 
-            <h3>Copy the TikTok link</h3>
+            <h3>
+              Salin Link Video TikTok
+            </h3>
 
-            <p>Copy the URL of the TikTok video.</p>
+            <p>
+              Buka aplikasi TikTok dan salin URL atau link video
+              yang ingin Anda download.
+            </p>
 
           </div>
 
@@ -217,13 +332,19 @@
 
         <div class="step">
 
-          <span>2</span>
+          <span>
+            2
+          </span>
 
           <div>
 
-            <h3>Paste the link</h3>
+            <h3>
+              Tempel Link
+            </h3>
 
-            <p>Paste it into the box above.</p>
+            <p>
+              Tempel link video TikTok ke kolom download di atas.
+            </p>
 
           </div>
 
@@ -232,28 +353,158 @@
 
         <div class="step">
 
-          <span>3</span>
+          <span>
+            3
+          </span>
 
           <div>
 
-            <h3>Download</h3>
+            <h3>
+              Download Video
+            </h3>
 
-            <p>Press the download button.</p>
+            <p>
+              Tekan tombol Download Video dan tunggu sampai proses selesai.
+            </p>
 
           </div>
 
         </div>
+
 
       </div>
 
     </section>
+
+
+    <!-- SEO CONTENT -->
+    <section class="seo-content">
+
+      <h2>
+        Download Video TikTok Tanpa Watermark
+      </h2>
+
+      <p>
+        TikSave adalah alat online yang membantu Anda
+        <strong>download video TikTok tanpa watermark</strong>
+        dengan mudah. Anda tidak perlu memasang aplikasi tambahan
+        atau membuat akun untuk menggunakan layanan ini.
+      </p>
+
+      <p>
+        Untuk mulai download video TikTok, cukup salin link video
+        dari aplikasi TikTok kemudian tempelkan link tersebut
+        ke kolom yang tersedia di halaman ini.
+      </p>
+
+      <h2>
+        TikTok Downloader Online
+      </h2>
+
+      <p>
+        TikSave dapat digunakan sebagai
+        <strong>TikTok downloader online</strong>
+        melalui browser. Layanan ini dirancang agar mudah digunakan
+        di perangkat Android, iPhone, tablet, dan komputer.
+      </p>
+
+      <h2>
+        Cara Menyimpan Video TikTok
+      </h2>
+
+      <p>
+        Cari video TikTok yang ingin disimpan, pilih opsi berbagi
+        dan salin tautan video. Setelah itu kembali ke TikSave,
+        masukkan link tersebut dan tekan tombol download.
+      </p>
+
+      <p>
+        Gunakan TikSave hanya untuk video yang Anda miliki atau
+        video yang memang Anda memiliki izin untuk menyimpan dan
+        menggunakannya.
+      </p>
+
+    </section>
+
+
+    <!-- FAQ -->
+    <section class="faq">
+
+      <h2>
+        Pertanyaan yang Sering Diajukan
+      </h2>
+
+
+      <div class="faq-item">
+
+        <h3>
+          Apakah TikSave gratis?
+        </h3>
+
+        <p>
+          Ya. TikSave dapat digunakan secara gratis melalui browser.
+        </p>
+
+      </div>
+
+
+      <div class="faq-item">
+
+        <h3>
+          Apakah harus membuat akun?
+        </h3>
+
+        <p>
+          Tidak. Anda tidak perlu membuat akun untuk menggunakan
+          fitur download video.
+        </p>
+
+      </div>
+
+
+      <div class="faq-item">
+
+        <h3>
+          Apakah bisa digunakan di HP?
+        </h3>
+
+        <p>
+          Ya. TikSave dapat digunakan melalui browser pada Android
+          maupun perangkat mobile lainnya.
+        </p>
+
+      </div>
+
+
+      <div class="faq-item">
+
+        <h3>
+          Bagaimana cara download video TikTok?
+        </h3>
+
+        <p>
+          Salin link video TikTok, tempelkan ke kolom di atas,
+          kemudian tekan tombol Download Video.
+        </p>
+
+      </div>
+
+    </section>
+
 
   </main>
 
 
   <footer>
 
-    <p>© 2026 TikSave</p>
+    <p>
+      © 2026 TikSave. All rights reserved.
+    </p>
+
+    <p>
+      TikSave adalah layanan independen dan tidak berafiliasi
+      dengan TikTok.
+    </p>
 
   </footer>
 
@@ -261,4 +512,4 @@
   <script src="script.js"></script>
 
 </body>
-</html>
+  </html>
