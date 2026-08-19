@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://videosave-source.github.io/tiktok-saver/sitemap.xml
