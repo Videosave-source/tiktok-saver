@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TikSave - TikTok Downloader</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="logo">Tik<span>Save</span></div>
+    <div class="badge">FREE</div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+
+      <div class="hero-icon">↓</div>
+
+      <h1>
+        TikTok Video<br>
+        <span>Downloader</span>
+      </h1>
+
+      <p>
+        Download TikTok videos quickly and easily.
+      </p>
+
+      <div class="download-box">
+
+        <div class="input-wrapper">
+
+          <span class="link-icon">🔗</span>
+
+          <input
+            type="url"
+            id="tiktokUrl"
+            placeholder="Paste TikTok video URL..."
+            autocomplete="off"
+          >
+
+          <button
+            id="pasteBtn"
+            type="button"
+          >
+            Paste
+          </button>
+
+        </div>
+
+        <button
+          id="downloadBtn"
+          type="button"
+        >
+          ↓ Download Video
+        </button>
+
+      </div>
+
+      <div id="message"></div>
+
+    </section>
+
+
+    <section id="resultSection" class="hidden">
+
+      <div class="result-card">
+
+        <video
+          id="videoPreview"
+          controls
+          playsinline
+        ></video>
+
+        <div class="video-info">
+
+          <h2>Video Ready</h2>
+
+          <p>
+            Your video is ready to download.
+          </p>
+
+          <a
+            id="saveBtn"
+            href="#"
+            target="_blank"
+          >
+            ↓ Save Video
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <section class="features">
+
+      <div class="feature">
+        <div>⚡</div>
+        <h3>Fast</h3>
+        <p>Simple and quick.</p>
+      </div>
+
+      <div class="feature">
+        <div>📱</div>
+        <h3>Mobile</h3>
+        <p>Works on mobile devices.</p>
+      </div>
+
+      <div class="feature">
+        <div>🔒</div>
+        <h3>Simple</h3>
+        <p>No account required.</p>
+      </div>
+
+    </section>
+
+
+    <section class="how-section">
+
+      <h2>How to use</h2>
+
+      <div class="steps">
+
+        <div class="step">
+          <span>1</span>
+          <div>
+            <h3>Copy the TikTok link</h3>
+            <p>Copy the URL of the TikTok video.</p>
+          </div>
+        </div>
+
+        <div class="step">
+          <span>2</span>
+          <div>
+            <h3>Paste the link</h3>
+            <p>Paste it into the box above.</p>
+          </div>
+        </div>
+
+        <div class="step">
+          <span>3</span>
+          <div>
+            <h3>Download</h3>
+            <p>Press the download button.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <footer>
+    <p>© 2026 TikSave</p>
+  </footer>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
